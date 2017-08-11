@@ -15,6 +15,7 @@ include_once 'include/Webservices/Relation.php';
 
 include_once 'vtlib/Vtiger/Module.php';
 include_once 'includes/main/WebUI.php';
+ini_set('max_execution_time', 0);
 
 $webUI = new Vtiger_WebUI();
 $webUI->process(new Vtiger_Request($_REQUEST, $_REQUEST));
